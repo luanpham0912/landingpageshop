@@ -1,0 +1,151 @@
+.tab__parallax {
+    background-image: url(../../img/pattern-2.png);
+    background-repeat: repeat;
+    background-position: unset;
+    background-size: auto;
+    height: auto;
+
+    .tab__content {
+        padding: 0 100px;
+        #pills-tab.nav-pills.nav {
+            .nav-item {
+                margin-right: 20px;
+
+                .nav-link {
+                    color: $color-black-5;
+                    background-color: $color-overlay-4;
+                    position: relative;
+                    padding: 35px 70px;
+                    border-radius: 0;
+                    transition: all 0.3s;
+
+                    i {
+                        font-size: 36px;
+
+                    }
+
+                    &::after {
+                        position: absolute;
+                        bottom: -10px;
+                        left: 50%;
+                        width: 0;
+                        height: 0;
+                        margin-left: -10px;
+                        content: "";
+                        transition: all .3s ease;
+                        opacity: 0;
+                        border-width: 10px 10px 0 10px;
+                        border-style: solid;
+                        border-color: #fff transparent transparent transparent;
+                    }
+
+                    &.active,
+                    &:hover,
+                    &:focus {
+                        color: $color-black-4;
+                        background-color: $color-white-0;
+                        &::after{
+                            opacity: 1;
+                        }
+
+                    }
+                }
+
+            }
+        }
+        #pills-tabContent.tab-content{
+            padding: 30px 0;
+            .tab__parallax__item{
+                line-height: 30px;
+                h1{
+                    letter-spacing: 2px;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    color: $color-black-3;
+                }
+                h2{
+                    letter-spacing: 2px;
+                    margin-bottom: 50px;
+                    font-weight: normal;
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .tab__parallax {
+        .tab__content {
+            padding: 0 20px;
+            #pills-tab.nav-pills.nav {
+                .nav-item {
+                    margin-right: 0;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10px;
+    
+                    .nav-link {
+                        color: $color-black-5;
+                        background-color: $color-overlay-4;
+                        position: relative;
+                        padding: 35px 70px;
+                        border-radius: 0;
+                        transition: all 0.3s;
+    
+                        i {
+                            font-size: 36px;
+    
+                        }
+    
+                        &::after {
+                            position: absolute;
+                            bottom: -10px;
+                            left: 50%;
+                            width: 0;
+                            height: 0;
+                            margin-left: -10px;
+                            content: "";
+                            transition: all .3s ease;
+                            opacity: 0;
+                            border-width: 10px 10px 0 10px;
+                            border-style: solid;
+                            border-color: #fff transparent transparent transparent;
+                        }
+    
+                        &.active,
+                        &:hover,
+                        &:focus {
+                            color: $color-black-4;
+                            background-color: $color-white-0;
+                            &::after{
+                                opacity: 1;
+                            }
+    
+                        }
+                    }
+    
+                }
+            }
+            #pills-tabContent.tab-content{
+                padding: 30px 0;
+                .tab__parallax__item{
+                    line-height: 30px;
+                    h1{
+                        letter-spacing: 2px;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        color: $color-black-3;
+                    }
+                    h2{
+                        letter-spacing: 2px;
+                        margin-bottom: 50px;
+                        font-weight: normal;
+                        font-size: 30px;
+                    }
+    
+                }
+            }
+        }
+    }
+}

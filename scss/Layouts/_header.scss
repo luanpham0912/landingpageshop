@@ -1,0 +1,280 @@
+#header__massive {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+
+
+
+    .nav-normal {
+        height: 100px;
+        width: 100%;
+        transition: all 0.3s;
+
+        .nav__fix {
+            transition: background-color 0.6s;
+
+
+            .container-fluid {
+                padding-left: 30px;
+                padding-right: 30px;
+                height: 100%;
+
+                .navbar-massive {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+                    background: none;
+
+                    .navbar-brand {
+                        margin-right: 30px;
+                        line-height: 100px;
+                        height: 100px;
+                        padding: 0;
+                        transition: all 0.3s;
+
+
+
+                        img {
+                            position: relative;
+                            top: -2px;
+                            display: inline-block;
+                            max-height: 100%;
+                            padding: 2px 0;
+                        }
+
+                    }
+
+                    .navbar-collapse {
+                        height: 100%;
+
+                        .navbar-nav {
+                            height: 100%;
+                            margin-left: auto;
+
+                            .nav-item {
+                                margin-left: 2px;
+                                height: 100%;
+
+                                .nav-link {
+                                    height: 100%;
+                                    line-height: 100px;
+                                    transition: all 0.3s;
+                                    padding: 0 12px;
+                                    text-decoration: none;
+                                    color: #fff;
+                                    outline: 0;
+                                    font-size: 13px;
+                                    font-weight: 600;
+
+                                    span {
+                                        margin-left: 3px;
+                                    }
+
+                                    &:hover {
+                                        color: $color-yellow-0;
+                                    }
+                                }
+
+                                &.active {
+                                    .nav-link {
+                                        color: $color-yellow-0;
+                                    }
+                                }
+                            }
+
+                            .nav-deviser {
+                                a {
+                                    cursor: text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar {
+                height: 100%;
+                background: none;
+            }
+        }
+    }
+
+    .navbar-scroll {
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 10000;
+        transition: all 0.3s;
+
+
+        .nav__fix {
+            background-color: black;
+            transition: background-color 0.3s;
+
+            .container-fluid {
+                padding-left: 30px;
+                padding-right: 30px;
+                height: 100%;
+
+                .navbar-massive {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+
+                    .navbar-brand {
+                        margin-right: 30px;
+                        line-height: 60px;
+                        height: 60px;
+                        padding: 0;
+                        display: block;
+                        transition: all 0.3s;
+
+
+
+                        img {
+                            position: relative;
+                            top: -2px;
+                            display: inline-block;
+                            max-height: 100%;
+                            padding: 2px 0;
+                        }
+
+                    }
+
+                    .navbar-collapse {
+                        height: 100%;   
+
+                        .navbar-nav {
+                            height: 100%;
+
+                            .nav-item {
+                                margin-left: 2px;
+                                height: 100%;
+
+                                .nav-link {
+                                    height: 100%;
+                                    line-height: 60px;
+                                    transition: all 0.3s;
+                                    padding: 0 12px;
+                                    text-decoration: none;
+                                    color: #fff;
+                                    outline: 0;
+                                    font-size: 13px;
+                                    font-weight: 600;
+
+                                    span {
+                                        margin-left: 3px;
+                                    }
+                                }
+
+                                &.active {
+                                    .nav-link {
+                                        color: $color-yellow-0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar {
+                height: 100%;
+                background: none;
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+    #header__massive {
+        #navbarMassive {
+            .container-fluid {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .navbar-massive {
+                .navbar-toggler {
+                    span {
+                        i {
+                            color: $color-white-0;
+                            line-height: 1.5em;
+                        }
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .navbar-collapse {
+
+
+                    .navbar-nav {
+                        max-height: 400px;
+                        overflow-y: auto;
+                        text-align: left;
+                        flex-wrap: nowrap !important;
+                        align-items: flex-start !important;
+                        background-color: $color-white-0;
+                        margin: 0 10px;
+
+                        .nav-item {
+                            position: relative;
+                            width: 100%;
+
+                            .nav-link {
+                                padding: 12px 20px !important;
+                                line-height: 20px;
+                                border-bottom: solid 1px #f0f0f0;
+                                color: #333;
+                                outline: 0;
+                                font-size: 13px;
+                                font-weight: normal;
+                                transition: all .3s;
+
+                                span {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    width: 60px;
+                                    height: 45px;
+                                    text-align: center;
+                                    border-left: solid 1px #f5f5f5;
+                                    font-size: 22px;
+                                    line-height: 43px;
+                                }
+
+                            }
+
+                            &.active,
+                            &:hover {
+                                .nav-link {
+                                    color: $color-yellow-0;
+                                }
+
+                            }
+                        }
+
+                        .nav-deviser {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

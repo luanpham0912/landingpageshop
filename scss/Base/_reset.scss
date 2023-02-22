@@ -1,0 +1,62 @@
+hmtl{
+    font-size: 10px;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #323232;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 30px 0;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+#header__massive {
+    #navbarMassive{
+        .nav__fix{
+            .navbar-massive{
+                .collapsing{
+                    transition: all 0.00001s;
+                }
+            }
+        }
+
+    }
+
+}
+::selection {
+    background: $color-yellow-0; 
+    color:$color-white-0;
+}
+.vbox-close {
+    font-size: 16px;
+    top: 6%;
+    right: 16%;
+}
+.skill__progress{
+        overflow: hidden; 
+}
+:root {
+    --animate-duration: 0.7s;
+  }

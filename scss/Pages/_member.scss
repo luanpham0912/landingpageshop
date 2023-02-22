@@ -1,0 +1,178 @@
+.member {
+    // padding: 0 40px;
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        .member__content {
+            margin-top: 70px;
+            .col-lg-4 {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+                .team__member {
+                    position: relative;
+                    overflow: hidden;
+                    .team__img {
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                        .team__info {
+                            right: 0;
+                            position: absolute;
+                            bottom: 30px;
+                            width: 70%;
+                            padding: 10px 20px;
+                            text-align: right;
+                            background: $color-overlay-5;
+                            h5 {
+                                color: $color-white-0;
+                                margin-bottom: 0;
+                                letter-spacing: 2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                margin-bottom: 3px;
+                            }
+
+                            p {
+                                color: rgba(255, 255, 255, .5);
+                                font-size: 12px;
+                                margin-bottom: 0;
+                                letter-spacing: 2px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    .member__hover {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        transition: all .3s;
+                        opacity: 0;
+                        border: 20px solid rgba(0, 0, 0, .1);
+                        background-color: rgba(255, 255, 255, .9);
+                        .hover__text {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            padding: 0 20px;
+                            transition: all .3s .2s;
+                            transform: translateY(-55%);
+                            text-align: center;
+                            color: $color-black-4;
+                            opacity: 0;
+
+                            h4 {
+                                margin-bottom: 25px;
+                                letter-spacing: 4px;
+                                font-size: 14px;
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                                color: $color-black-3;
+                                font-size: 14px;
+                                font-weight: normal;
+                                line-height: 30px;
+                            }
+                        }
+
+                        .hover__logo {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            transition: all .3s .2s;
+                            transform: translateY(45%);
+                            text-align: center;
+                            opacity: 0;
+                            font-size: 35px;
+                            
+                            a {
+                                margin: 0 10px;
+                                color: $color-black-4;
+                                font-size: 16px;
+                                transition: all .3s;
+                                &:hover{
+                                    color: $color-yellow-0;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .member__hover {
+                            opacity: 1;
+
+                            .hover__text {
+                                opacity: 1;
+                                top: 35%;
+                            }
+
+                            .hover__logo {
+                                opacity: 1;
+                                bottom: 10%;
+                            }
+                        }
+                    }
+                }
+
+            
+
+            .col-md-12 {
+                padding-right: 30px;
+                padding-left: 30px;
+
+                .hiring {
+                    flex-wrap: wrap;
+                    margin-top: 100px;
+                    background: $color-gray-3;
+                    padding: 40px;
+
+                    .hiring__left {
+                        h4{
+                            margin-bottom: 0;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            font-size: 18px;
+                            span{
+                                color: #d6b161;
+                            }
+                        }
+                        p{
+                            margin-top: 10px;
+                            color: $color-black-3;
+                        }
+                    }
+                    .hiring__right{
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 992px) {
+    .member__content{
+       width: 95%;
+       margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hiring__left{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .member{
+        .container{
+            max-width: none;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.parallax__awsome{
+    background-image: url(../../img/8.jpg);
+    padding: 150px 0;
+    height: auto;
+    .parallax__content{
+        p{
+            letter-spacing: 3px;
+            font-size: 16px;
+            color: $color-yellow-0; 
+            margin-bottom: 0;
+
+        }
+        h1{
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            font-weight: normal;
+            color:  $color-white-0;
+            font-size: 36px;
+        }
+        .parallax__button{
+            margin-top: 50px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .parallax__awsome{
+        .parallax__content{
+            p{
+                letter-spacing: 3px;
+                font-size: 16px;
+                color: $color-yellow-0; 
+                margin-bottom: 0;
+    
+            }
+            h1{
+                margin-bottom: 0;
+                letter-spacing: 2px;
+                font-weight: normal;
+                color:  $color-white-0;
+                font-size: 26px;
+            }
+            .parallax__button{
+                margin-top: 50px;
+            }
+        }
+    }
+}

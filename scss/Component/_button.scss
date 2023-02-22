@@ -1,0 +1,36 @@
+.btn{
+    padding: 15px 30px;
+    margin-right: 0;
+    transition: all .3s;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+.btn-hiring{
+    color: $color-white-0;
+    background: $color-black-4;
+    
+    &:hover{
+        color: $color-white-0;
+        background: $color-yellow-0;
+    }
+}
+.btn-parallax{
+    color: $color-white-0;
+    background: $color-yellow-0;
+    &:hover{
+        color: $color-black-0;
+        background: $color-white-0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn-medium{
+    font-size: 12px;
+    }
+}

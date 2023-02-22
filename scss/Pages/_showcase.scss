@@ -1,0 +1,542 @@
+.showcase {
+    padding-bottom: 0;
+    .container {
+        .showcase__title {
+            margin-bottom: 70px;
+        }
+    }
+
+    .showcass__control {
+
+        a {
+            margin: 0 15px;
+            letter-spacing: 3px;
+            color: #a9a8a8;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all .5s;
+
+        }
+
+        .mixitup-control-active {
+            color: black;
+        }
+    }
+
+    .showcase__content {
+        margin-top: 50px;
+
+        >div {
+            width: 25%;
+            padding-left: 0;
+            padding-right: 0;
+
+            .showcase__item {
+                position: relative;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .showcase__hover {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: 0;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    border: $boder-2;
+                    background-color: $color-overlay-1;
+
+                    .hover__logo {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        transition: all .3s;
+                        transform: translateY(45%);
+                        text-align: center;
+                        opacity: 0;
+                        font-size: 35px;
+
+                        a {
+                            color: $color-black-4;
+                            .fa-play{
+                                width: 40px;
+                                height: 40px;
+                                line-height: 35px;
+                                border: 3px solid $color-black-4;;
+                                font-size: 25px;
+                            }
+
+                        }
+                    }
+
+                    .hover__text {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        transition: all .3s;
+                        transform: translateY(-28%);
+                        opacity: 0;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            &:hover{
+                                color: $color-yellow-0;
+                            }
+                        }
+
+                        h4 {
+                            margin-bottom: 5px;
+                            letter-spacing: 4px;
+                            font-size: 14px;
+                            a{
+                                color: $color-black-4;
+                            }
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                            letter-spacing: 3px;
+                            font-size: 12px;
+                            font-weight: normal;
+                            line-height: 30px;
+                            a{
+                                color: $color-gray-9;
+                            }
+                        }
+
+                    }
+                }
+                &:hover{
+                    .showcase__hover{
+                        opacity: 1;
+                        .hover__logo{
+                            opacity: 1;
+                            top: 13%;
+                        }
+                        .hover__text{
+                            opacity: 1;
+                            bottom: 2%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}
+@media screen and (max-width: 1250px) {
+    .showcase {
+
+        .showcass__control {
+    
+            a {
+                margin: 0 15px;
+                letter-spacing: 3px;
+                color: #a9a8a8;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all .5s;
+    
+            }
+    
+            .mixitup-control-active {
+                color: black;
+            }
+        }
+    
+        .showcase__content {
+            margin-top: 50px;
+    
+            >div {
+                width: 25%;
+                padding-left: 0;
+                padding-right: 0;
+    
+                .showcase__item {
+                    position: relative;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                    .showcase__hover {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        transition: all 0.3s;
+                        opacity: 0;
+                        border: $boder-2;
+                        background-color: $color-overlay-1;
+    
+                        .hover__logo {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            transition: all .3s;
+                            transform: translateY(10%);
+                            text-align: center;
+                            opacity: 0;
+                            font-size: 35px;
+    
+                            a {
+                                color: $color-black-4;
+                                .fa-play{
+                                    position: absolute;
+                                    left: 40%;
+                                    top: 0;
+                                    transform: translateY(10%);
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 33px;
+                                    border: 3px solid $color-black-4;;
+                                    font-size: 20px;
+                                }
+    
+                            }
+                        }
+    
+                        .hover__text {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            transition: all .3s;
+                            transform: translateY(3%);
+                            opacity: 0;
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                                &:hover{
+                                    color: $color-yellow-0;
+                                }
+                            }
+    
+                            h4 {
+                                margin-bottom: 5px;
+                                letter-spacing: 4px;
+                                font-size: 14px;
+                                a{
+                                    color: $color-black-4;
+                                }
+                            }
+    
+                            p {
+                                margin-bottom: 0;
+                                letter-spacing: 3px;
+                                font-size: 12px;
+                                font-weight: normal;
+                                line-height: 30px;
+                                a{
+                                    color: $color-gray-9;
+                                }
+                            }
+    
+                        }
+                    }
+                    &:hover{
+                        .showcase__hover{
+                            opacity: 1;
+                            .hover__logo{
+                                opacity: 1;
+                                top: 13%;
+                            }
+                            .hover__text{
+                                opacity: 1;
+                                bottom: 2%;
+                            }
+                        }
+                    }
+                }
+    
+            }
+    
+    
+        }
+    
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .showcase {
+        padding-bottom: 0;
+        .container {
+            .showcase__title {
+                margin-bottom: 70px;
+            }
+        }
+    
+        .showcass__control {
+    
+            a {
+                margin: 0 15px;
+                letter-spacing: 3px;
+                color: #a9a8a8;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all .5s;
+    
+            }
+    
+            .mixitup-control-active {
+                color: black;
+            }
+        }
+    
+        .showcase__content {
+            margin-top: 50px;
+    
+            >div {
+                width: 33.3333%;
+                padding-left: 0;
+                padding-right: 0;
+    
+                .showcase__item {
+                    position: relative;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                    .showcase__hover {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        transition: all 0.3s;
+                        opacity: 0;
+                        border: $boder-2;
+                        background-color: $color-overlay-1;
+    
+                        .hover__logo {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            transition: all .3s;
+                            transform: translateY(17%);
+                            text-align: center;
+                            opacity: 0;
+                            font-size: 35px;
+    
+                            a {
+                                color: $color-black-4;
+                                .fa-play{
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 35px;
+                                    border: 3px solid $color-black-4;;
+                                    font-size: 25px;
+                                }
+    
+                            }
+                        }
+    
+                        .hover__text {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            transition: all .3s;
+                            transform: translateY(-28%);
+                            opacity: 0;
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                                &:hover{
+                                    color: $color-yellow-0;
+                                }
+                            }
+    
+                            h4 {
+                                margin-bottom: 5px;
+                                letter-spacing: 4px;
+                                font-size: 14px;
+                                a{
+                                    color: $color-black-4;
+                                }
+                            }
+    
+                            p {
+                                margin-bottom: 0;
+                                letter-spacing: 3px;
+                                font-size: 12px;
+                                font-weight: normal;
+                                line-height: 30px;
+                                a{
+                                    color: $color-gray-9;
+                                }
+                            }
+    
+                        }
+                    }
+                    &:hover{
+                        .showcase__hover{
+                            opacity: 1;
+                            .hover__logo{
+                                opacity: 1;
+                                top: 13%;
+                            }
+                            .hover__text{
+                                opacity: 1;
+                                bottom: 2%;
+                            }
+                        }
+                    }
+                }
+    
+            }
+    
+    
+        }
+    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .showcase {
+        padding-bottom: 0;
+        .container {
+            .showcase__title {
+                margin-bottom: 70px;
+            }
+        }
+    
+        .showcass__control {
+    
+            a {
+                margin: 0 15px;
+                letter-spacing: 3px;
+                color: #a9a8a8;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all .5s;
+    
+            }
+    
+            .mixitup-control-active {
+                color: black;
+            }
+        }
+    
+        .showcase__content {
+            margin-top: 50px;
+    
+            >div {
+                width: 50%;
+                padding-left: 0;
+                padding-right: 0;
+    
+                .showcase__item {
+                    position: relative;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                    .showcase__hover {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        transition: all 0.3s;
+                        opacity: 0;
+                        border: $boder-2;
+                        background-color: $color-overlay-1;
+    
+                        .hover__logo {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            transition: all .3s;
+                            transform: translateY(45%);
+                            text-align: center;
+                            opacity: 0;
+                            font-size: 35px;
+    
+                            a {
+                                color: $color-black-4;
+                                .fa-play{
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 35px;
+                                    border: 3px solid $color-black-4;;
+                                    font-size: 25px;
+                                }
+    
+                            }
+                        }
+    
+                        .hover__text {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            transition: all .3s;
+                            transform: translateY(-28%);
+                            opacity: 0;
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                                &:hover{
+                                    color: $color-yellow-0;
+                                }
+                            }
+    
+                            h4 {
+                                margin-bottom: 5px;
+                                letter-spacing: 4px;
+                                font-size: 14px;
+                                a{
+                                    color: $color-black-4;
+                                }
+                            }
+    
+                            p {
+                                margin-bottom: 0;
+                                letter-spacing: 3px;
+                                font-size: 12px;
+                                font-weight: normal;
+                                line-height: 30px;
+                                a{
+                                    color: $color-gray-9;
+                                }
+                            }
+    
+                        }
+                    }
+                    &:hover{
+                        .showcase__hover{
+                            opacity: 1;
+                            .hover__logo{
+                                opacity: 1;
+                                top: 13%;
+                            }
+                            .hover__text{
+                                opacity: 1;
+                                bottom: 2%;
+                            }
+                        }
+                    }
+                }
+    
+            }
+    
+    
+        }
+    
+    }
+}
